@@ -40,13 +40,13 @@ console.log(`========================================================`);
  var result= swap(1000,2000)
 
  console.log(`========================================================`);
- var givenString= "JS the most popular language of internet";
+ var stringHandsOn= function () {
+    var givenString ="JS the most popular language of internet";
+    var lengthOFString= givenString.length
+    console.log( `length of given string is:`, lengthOFString);
+    console.log(`========================================================`);
 
-var lengthOFString= givenString.length
-console.log( `length of given string is:`, lengthOFString);
-console.log(`========================================================`);
-
-var charfive = givenString.charAt(5)
+    var charfive = givenString.charAt(5)
 var charEleven = givenString.charAt(11)
 console.log(`5th char ${charfive} and 11th charecter is ${charEleven} :`);
 console.log(`========================================================`);
@@ -63,6 +63,9 @@ console.log(`========================================================`);
 
 squareOfWords=7*7
 console.log ( `square of total no. of words is `,squareOfWords);
+}
+
+ stringHandsOn()
 
 
 
