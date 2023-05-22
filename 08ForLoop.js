@@ -12,7 +12,10 @@ for (let index = 5; index <=50; index=index+5) { // index = 11
 console.log("After loop");
 // for 17 table
 
-// Index=0; Index<=170;index +17
+for (let  index=0; index<=170;index +17 ) {
+    
+    console.log(index);
+}
 
 // table 19 reverse
 
@@ -23,13 +26,13 @@ for (let index = 190; index <=19; index=index-19) {
 console.log("After loop");
 
 
-//
+// table of 8
 for (let index = 0; index>=80; index=index+8) { 
     console.log(index); 
 }
 console.log("After loop");
 
-// WAP to reverse the string--> jawaScript
+// the string--> jawaScript
 // JavaScript = J a v a S c r  i  p  t
 var str = "JavaScript"; // 9
 for (let index = 0; index < str.length; index++) { // 0  1   2
@@ -50,7 +53,7 @@ for (let index = 9; index >= 0; index--) { // index = 9  8
 }
 console.log(reverseString);
 
-
+// reverse word with function
 function reverseWord(word){
     var reverseString = "";
     var wordLength = word.length - 1;
