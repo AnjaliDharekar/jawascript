@@ -167,3 +167,13 @@ console.log(`===== Even position char=======`);
      console.log(concatString);
  }
  evenPositionChar(`i am trying to write program in jawaScript `)
+
+ console.log(`==============prime no.============`);
+  function primeNumber(num) {
+    if (num%2!=0|| num%3!=0|| num%5!=0 || num%7) {
+        
+    } else {
+        
+    }
+    
+  }
