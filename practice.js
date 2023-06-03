@@ -170,14 +170,37 @@ console.log(`===== Even position char=======`);
 
  console.log(`==============prime no.============`);
   function primeNumber(num) {
-    if (num%2!=0|| num%3!=0|| num%5!=0 || num%7) {
-        
-    } else {
+    if (condition) {
         
     }
     
   }
 
+  var array= [" anil", "siya", "sunil", "jenny"]
+  array.unshift()
+  console.log(array);
+ 
+  array.splice(1,0,"ram")
+  console.log(array);
+ 
+  var array= [" anil", "siya","Ram", "sunil", "jenny"]
+ 
+  console.log( array.slice((array.length-2)));
+ 
+  
+  var array1= [" anil", "siya","Ram", "sunil", "jenny"]
+  console.log(array1);
+  array1.splice(1,1,"bill")
+  console.log( array1);
+ 
+  var array= [" anil", "siya", "sunil", "jenny"]
+  array.splice(0,0,"anju")
+  console.log(array);
+ 
+  var array= [" anil", "siya", "sunil", "jenny"]
+  array.splice(4,0,"anju")
+  console.log(array);
+ 
 
 
 
