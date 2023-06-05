@@ -1,0 +1,21 @@
+console.log(`==================1======================`);
+let display = ()=> {
+    console.log(`Good morning ,today is monday...`);
+}
+display();
+console.log(`==================2======================`);
+let multiply=(num1,num2,num3)=>{
+let result=num1*num2*num3
+console.log(`multiplication of given numbers is :${result}`);
+
+}
+multiply(5,5,2)
+multiply(10,4,1)
+console.log(`==================2======================`);
+let addition=(num1,num2,num3,num4,num5)=>{
+let result=num1+num2+num3+num4+num5
+console.log(` addition of given input is : ${result}`);
+return result
+}
+addition(100,100,200,349,756)
+addition("i am " ,"learning " ,"ES6 ", 'features ' ,"in depth" )

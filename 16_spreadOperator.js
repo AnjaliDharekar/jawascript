@@ -56,3 +56,38 @@ console.log(pin, age, isMarried);
 const arr = [11, 22, 33];
 const [element1, element2, num1, num2=0] = arr;
 console.log(element1, element2, num1, num2);
+
+console.log(`------------remove duplicate element using spread operator------------`);
+const arrayNum=[11,3,4,11,4,7,3];
+console.log(`given array ${arrayNum}`);
+
+const setOfNum=[...new Set(arrayNum)]
+console.log(setOfNum);
+console.log(`--------------remove duplicate element ---------`);
+const arrayNum1=[11,3,4,11,4,7,3];
+const setOfNum1=new Set()
+for (const element of arrayNum1) {
+    setOfNum1.add(element)
+}
+console.log(setOfNum1);
+
+
+console.log(`---------remove duplicate element using for loop------------`);
+console.log(`given array : ${arrayNum}`);
+
+
+for (let i = 0; i < arrayNum.length; i++) {
+    
+    for (let j= i+1; j < arrayNum.length; j++) {
+    if (arrayNum[i]==arrayNum[j]) {
+        continue;
+    } else {
+       var result=arrayNum[i]
+        
+        console.log(result);
+    }
+    
+        
+    }
+
+}
