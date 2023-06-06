@@ -1,4 +1,4 @@
-'use strict'
+"use strict";
 const array = [11, 22, 33, 44, 55, 66];
 console.log(array);
 console.log(...array);
@@ -6,26 +6,27 @@ console.log(...array);
 const array2 = [...array];
 
 const person = {
-    name: "Stew",
-    age: 57,
-    country: "US"
-}
+  name: "Stew",
+  age: 57,
+  country: "US",
+};
 console.log(`============rest parameter===========`);
-const person2 = {...person};
+const person2 = { ...person };
 console.log(person2);
 
 function show(adharNum, role, ...parameters) {
-    console.log(adharNum, role, parameters);
+  console.log(adharNum, role, parameters);
+}
+show(11223344, "CEO", 23, "Elon", "US");
+
+console.log(`-----------------default parameter=========`);
+
+function division(num1, num2 = 1) {
+  // let num1 = 7, let num2;
+  if (num2 == 0) {
+    num2 = 1;
   }
-  show(11223344, "CEO", 23, "Elon", "US");
-
-  console.log(`-----------------default parameter=========`);
-
-  function division(num1, num2=1){ // let num1 = 7, let num2;
-    if(num2==0){
-        num2=1;
-    } 
-    console.log(num1/num2);
+  console.log(num1 / num2);
 }
 division(10, 5);
 division(67, 0);
@@ -33,61 +34,61 @@ division(7);
 
 console.log(`============ Object Destructuring =============`);
 const student = {
-    name: "Stew",
-    age: 57,
-    country: "US",
-    pin: 223312,
-    rollNo: 111,
-    college: "COEP Pune",
-    marks: "90%",
-    degree: "BE CSE"
-}
+  name: "Stew",
+  age: 57,
+  country: "US",
+  pin: 223312,
+  rollNo: 111,
+  college: "COEP Pune",
+  marks: "90%",
+  degree: "BE CSE",
+};
 // const rollNo = student.rollNo;
 // const name = student.name;
 // const college = student.college;
 // const degree = student.degree;
 // const country = student.country;
 
-const {rollNo,name, college, degree, country } = student;
+const { rollNo, name, college, degree, country } = student;
 
-const { pin, age, isMarried=false } = student;  // const pin = student.pin;
+const { pin, age, isMarried = false } = student; // const pin = student.pin;
 console.log(pin, age, isMarried);
 
 const arr = [11, 22, 33];
-const [element1, element2, num1, num2=0] = arr;
+const [element1, element2, num1, num2 = 0] = arr;
 console.log(element1, element2, num1, num2);
 
-console.log(`------------remove duplicate element using spread operator------------`);
-const arrayNum=[11,3,4,11,4,7,3];
+console.log(
+  `------------remove duplicate element using spread operator------------`
+);
+const arrayNum = [11, 3, 4, 11, 4, 7, 3];
 console.log(`given array ${arrayNum}`);
 
-const setOfNum=[...new Set(arrayNum)]
+const setOfNum = [...new Set(arrayNum)];
 console.log(setOfNum);
 console.log(`--------------remove duplicate element ---------`);
-const arrayNum1=[11,3,4,11,4,7,3];
-const setOfNum1=new Set()
+const arrayNum1 = [11, 3, 4, 11, 4, 7, 3];
+const setOfNum1 = new Set();
 for (const element of arrayNum1) {
-    setOfNum1.add(element)
+  setOfNum1.add(element);
 }
 console.log(setOfNum1);
-
 
 console.log(`---------remove duplicate element using for loop------------`);
 console.log(`given array : ${arrayNum}`);
 
-
 for (let i = 0; i < arrayNum.length; i++) {
-    
-    for (let j= i+1; j < arrayNum.length; j++) {
-    if (arrayNum[i]==arrayNum[j]) {
-        continue;
+  const element = arrayNum[i];
+  for (let j = 0; j < arrayNum.length; j++) {
+    if (i == j) {
+      continue;
     } else {
-       var result=arrayNum[i]
+      if (element == arrayNum[j]) {
+        break;
+      } else {
         
-        console.log(result);
+        console.log(element);
+      }
     }
-    
-        
-    }
-
+  }
 }
