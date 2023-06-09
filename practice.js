@@ -201,8 +201,11 @@ console.log(`===== Even position char=======`);
   array.splice(4,0,"anju")
   console.log(array);
  
-
-
-
-
+console.log(`===========================`);
+function divide(x,y=1) {
+    console.log(x/y);
+    
+}
+divide(20,10)
+divide(51)
   
