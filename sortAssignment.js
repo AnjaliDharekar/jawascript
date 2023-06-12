@@ -4,10 +4,11 @@ const numArray=[];
 const alphaArray=[];
 array.forEach((element)=>{
 
-    if (element>0) {
+    if (typeof(element)=="number") {
         
         numArray.push(element)
-    } else{
+    } 
+    if (typeof(element)=="string"){
         alphaArray.push(element)
     }
 })
