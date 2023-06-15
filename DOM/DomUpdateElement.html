@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2 id="profile"> My Profile Details</h2>
+    <h4 id="technologies">Technology Stack</h4>
+    <ul id="ul">
+        <li>HTML and CSS</li>
+        <li id="Agile">Agile and JIRA</li>
+        <li>Angular or React</li>
+        <li>Oracle Database</li>
+    </ul>
+    <h2> MY hobbies</h2>
+    <a href="https://www.google.com/" target="_blank" class="link"> My Proflie </a>
+<p>project Description</p>
+<script>
+const changeColor=document.querySelector("#technologies");
+changeColor.style.color= 'red';
+
+const changeColorProfile=document.querySelector("#profile");
+changeColorProfile.style.color= 'green';
+console.log(` Changing an element attribute`);
+const elementLink = document.querySelector('.link');
+elementLink.setAttribute('href', 'https://www.linkedin.com/login');
+const ulElement=document.querySelector('#ul')
+const agileElement=document.querySelector('#Agile')
+ulElement.removeChild(agileElement)
+</script>
+
+</body>
+</html>
