@@ -6,8 +6,7 @@ class Vehicle {
         this.model = model;
         this.type= type;
         this. price =price
-    }
-    
+    }  
 }
 const mahindra = new Vehicle("mahindra", 'white', "Thar","SUV", "Rs. 15 lack");
 const TataNexon = new Vehicle("Tata",'red', "Nexon","SUV", "Rs. 8 lack" );
@@ -42,11 +41,7 @@ function TraverseObject(CollegeObject) {
         if (Object.hasOwnProperty.call(CollegeObject, key)) {
             const element = CollegeObject[key];
             console.log(`${key} : ${element}`);
-            
-
-
-        }
-        
+        }   
     }
     console.log(`------------------------------------------`);
 }

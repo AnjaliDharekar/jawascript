@@ -209,3 +209,17 @@ function divide(x,y=1) {
 divide(20,10)
 divide(51)
   
+
+
+let arrayOfRollNumbers=new Set()
+arrayOfRollNumbers.add(22)
+arrayOfRollNumbers.add(33)
+console.table(arrayOfRollNumbers);
+var arrayOfRollNumbers1 = [67, 56, 78, 90, 60, 90, 40];
+console.table(arrayOfRollNumbers1);
+var arrayOfRollNumbers3 = [67, 56, 78, 90, 60, 90, 40];
+
+var arrayOfRollNumber4 = [67, 56, 78, 90, 60, 90, 40, 99, 80];
+console.log(arrayOfRollNumber4);
+arrayOfRollNumber4.splice(2, 0, 666, 444)
+console.log(arrayOfRollNumber4);

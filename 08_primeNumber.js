@@ -16,7 +16,6 @@ function primeNum(num) {
     console.log(`Is not prime number ${num}`);
   }
 }
-
 primeNum(4);
 primeNum(5);
 primeNum(9);

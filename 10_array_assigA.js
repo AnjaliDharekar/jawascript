@@ -1,6 +1,4 @@
 console.log(`==============array====================  `);
-
-
 var arrayFruits= ["Banana","Orangr", "Apple","Mango","Water Melon"];
 console.log(`given array is : ${arrayFruits}`);
 const zerothIndexValue = arrayFruits[0];

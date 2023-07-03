@@ -14,12 +14,11 @@ var result = num1 == num2;
 console.log(`Equality is ${result}`);
 
 var num3 = "200";
-console.log(`Type of num1 -> ${typeof num3}`);
-var num4 = + num3;
-console.log(`Type of ${num4} -> ${typeof num4}`);
-
-var num5 = "pune";
-var num6 = +num5;
+console.log(`Type of num1 -> ${typeof num3}`)
+var num4 = + num3 
+console.log(`Type of ${num4} -> ${typeof num4}`)
+var num5 = "pune"
+var num6 = +num5 ;
 console.log(`Explicit conversion from "pune" to number is: ${num6}`);
 
 
@@ -82,23 +81,3 @@ var num1 = 60;
 var num2 = 60;
 var result = num1 <= num2;
 console.log(`greater than Result ==> ${result}`);
-
-
-
- function squareOfWordLength(str) {
-    var len = ;
-
- }
- squareOfWordLength("abc");
- squareOfWordLength("Google chrome");
-
- function abc(){
-    var str = "I am Angular Developer";
-    var lengthStr;
-    
- }
-
-
-
-
-

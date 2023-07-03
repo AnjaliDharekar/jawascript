@@ -10,6 +10,9 @@ console.log("Char at 0 index: ",charAtZeroIndex);
 var charAtLastIndex = greet.charAt(greet.length-1);
 console.log("Char at last index: ",charAtLastIndex);
 
+var charAtSeconsLastIndex = greet.charAt(greet.length-2);
+console.log("Char at second last index: ",charAtSeconsLastIndex);
+
 var charAtIndexTwenty= greet.charAt(20);
 console.log("Char at index 20 is:", charAtIndexTwenty);
 
@@ -39,7 +42,12 @@ console.log("After Trim firstName is: ",trimmedFirstName, trimmedFirstName.lengt
 console.log("Trimmed total spaces : ", firstNameLength-lengthAfterTrim);
 
 var lastName = "        Kharat   ";
-lastName.trimEnd();
+lastNameNew1=lastName.trimEnd();
+console.log(`afte trimEnd : ${lastNameNew1}`);
+var lastName = "        Kharat   ";
+var lastNameNew=lastName.trimStart();
+console.log(`afte trimStart: ${lastNameNew}`);
+
 
 var firstName = "Gajanan";
 var result = firstName.length;
@@ -58,6 +66,7 @@ console.log("Slice Result is: ", sliceResult);
 var subStringResult = greet.substring(4, 6);
 console.log("Substring result is: ", subStringResult);
 
+// for total words in string " " space in split
 var greet = "Good Morning mate, How are you";
 var resultSplit = greet.split(" ");
 console.log(resultSplit);
@@ -67,6 +76,7 @@ var resultSplit = greet.split(",");
 console.log(resultSplit);
 console.log("Total number parts: ",resultSplit.length);
 
+// for total charecters in string dont need space in split 
 var resultSplit = greet.split("");
 console.log(resultSplit);
-console.log("Total number of words: ",resultSplit.length);
+console.log("Total number of charecters in string : ",resultSplit.length);

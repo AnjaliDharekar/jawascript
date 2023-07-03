@@ -1,5 +1,4 @@
 console.log(` ==========Month Name by Switch case=================`);
-
 function monthOfYear(monthNum) {
   switch (monthNum) {
     case 1:

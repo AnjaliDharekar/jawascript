@@ -25,9 +25,8 @@ console.log(`no of words is : ${numOfWords}`);
 console.log( `no. of words are : ${numOfWords.length}`);
 var result= stringLength/numOfWords.length
 console.log( `string lenth / number of words is : ${result}`);
-result2= stringLength* numOfWords.length
+var result2= stringLength* numOfWords.length
 console.log(`string length * total wards in string is : ${ result2}`);
-
 
 }
 string()

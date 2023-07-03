@@ -1,25 +1,18 @@
-
+console.log(`====to find total count of " A" and "a" in given string=====`);
 
 function countChar(string) {
+  console.log(`given string : ${string}`);
 
-   console.log(`given string : ${string}`);
+  count = 0;
 
-   count=0
-
-for (let index = 0; index <(string.length) ; index++) {
-   var char= string.charAt(index)
-   if (char=="A"|| char=="a") {
-    count++
-    
-
-   } else {
-    
-   }
-
+  for (let index = 0; index < string.length; index++) {
+    var char = string.charAt(index);
+    if (char == "A" || char == "a") {
+      count++;
+    }
+    console.log(`total count of " A" and "a" is: ${count}`);
+    return count;
+  }
 }
-  console.log(`total count of " A" and "a" is: ${count}`);  
-  return count
-   
-}
-countChar(`I AM Learning JawaScript, The Language of internet`)
-countChar(`My favorite movie is LAggAn`)
+countChar(`I AM Learning JawaScript, The Language of internet`);
+countChar(`My favorite movie is LAggAn`);

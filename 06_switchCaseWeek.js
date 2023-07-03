@@ -41,7 +41,6 @@ weekDay(1);
 weekDay(2);
 weekDay(3);
 weekDay(7);
-
 weekDay(null);
 weekDay(undefined);
 weekDay(NaN);
